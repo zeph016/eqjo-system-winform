@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\FGCIJOROSystem.BLL.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\packages.config" />
+  <event action="Analyze" type="Success" name="FGCIJOROSystem.BLL" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.BLL\FGCIJOROSystem.BLL.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\FGCIJOROSystem.Common.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\packages.config" />
+  <event action="Analyze" type="Success" name="FGCIJOROSystem.Common" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\FGCIJOROSystem.Common.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\FGCIJOROSystem.DAL.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\App.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\packages.config" />
+  <event action="Analyze" type="Success" name="FGCIJOROSystem.DAL" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.DAL\FGCIJOROSystem.DAL.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\FGCIJOROSystem.Domain.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\packages.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="FGCIJOROSystem.Domain" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Domain\FGCIJOROSystem.Domain.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\FGCIJOROSystem.Reports.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\packages.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="rptActualAdvance.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rActualAdvance\rptActualAdvance.resx" />
+  <event action="Analyze" type="Success" name="rptAccomplishmentReport.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rptAccomplishmentReport.resx" />
+  <event action="Analyze" type="Success" name="rptAttendance.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rptAttendance.resx" />
+  <event action="Analyze" type="Success" name="rptCutOffAttendance.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rptCutOffAttendance.resx" />
+  <event action="Analyze" type="Success" name="rptCutOffAttendanceCalc.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rptCutOffAttendanceCalc.resx" />
+  <event action="Analyze" type="Success" name="rptCutOffAttendanceStatus.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rptCutOffAttendanceStatus.resx" />
+  <event action="Analyze" type="Success" name="rptDailyAttendance.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rptDailyAttendance.resx" />
+  <event action="Analyze" type="Success" name="rptDriversAttendance.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAttendance\rptDriversAttendance.resx" />
+  <event action="Analyze" type="Success" name="rptAuditTrail.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAuditTrail\rptAuditTrail.resx" />
+  <event action="Analyze" type="Success" name="rptAuditTrailRecordCountSum.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAuditTrail\rptAuditTrailRecordCountSum.resx" />
+  <event action="Analyze" type="Success" name="rptAuditTrailSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAuditTrail\rptAuditTrailSummary.resx" />
+  <event action="Analyze" type="Success" name="rptChecklist.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rChecklist\rptChecklist.resx" />
+  <event action="Analyze" type="Success" name="rptEquipmentHistory.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rEquipmentHistory\rptEquipmentHistory.resx" />
+  <event action="Analyze" type="Success" name="rptEquipmentReleasal.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rEquipmentReleasal\rptEquipmentReleasal.resx" />
+  <event action="Analyze" type="Success" name="rptReleasalSummaryReport.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rEquipmentReleasal\rptReleasalSummaryReport.resx" />
+  <event action="Analyze" type="Success" name="rptEquipmentUR.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rEquipmentUR\rptEquipmentUR.resx" />
+  <event action="Analyze" type="Success" name="rptEquipmentURSite.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rEquipmentUR\rptEquipmentURSite.resx" />
+  <event action="Analyze" type="Success" name="rptEquipmentURSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rEquipmentUR\rptEquipmentURSummary.resx" />
+  <event action="Analyze" type="Success" name="rptSummaryOfEquipment.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rEquipmentUR\rptSummaryOfEquipment.resx" />
+  <event action="Analyze" type="Success" name="rptJobOrder.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rJobOrder\rptJobOrder.resx" />
+  <event action="Analyze" type="Success" name="rptRescueOrder.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rJobOrder\rptRescueOrder.resx" />
+  <event action="Analyze" type="Success" name="rptPPEStatusLog.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rPPEStatusLog\rptPPEStatusLog.resx" />
+  <event action="Analyze" type="Success" name="rptJOROList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rPRS\rptJOROList.resx" />
+  <event action="Analyze" type="Success" name="rptJOROPRS.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rPRS\rptJOROPRS.resx" />
+  <event action="Analyze" type="Success" name="rptJOROPRSList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rPRS\rptJOROPRSList.resx" />
+  <event action="Analyze" type="Success" name="rptEquipmentSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptEquipmentSummary.resx" />
+  <event action="Analyze" type="Success" name="rptEquipmentSummaryOnly.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptEquipmentSummaryOnly.resx" />
+  <event action="Analyze" type="Success" name="rptMechanicSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptMechanicSummary.resx" />
+  <event action="Analyze" type="Success" name="rptMonitoringSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptMonitoringSummary.resx" />
+  <event action="Analyze" type="Success" name="rptMonitoringSummaryPerJORO.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptMonitoringSummaryPerJORO.resx" />
+  <event action="Analyze" type="Success" name="rptPersonnelSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptPersonnelSummary.resx" />
+  <event action="Analyze" type="Success" name="rptSectionSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptSectionSummary.resx" />
+  <event action="Analyze" type="Success" name="rptTariffByEquipmentJO.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptTariffByEquipmentJO.resx" />
+  <event action="Analyze" type="Success" name="rptTariffByEquipmentRO.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptTariffByEquipmentRO.resx" />
+  <event action="Analyze" type="Success" name="rptTariffByJobCategory.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptTariffByJobCategory.resx" />
+  <event action="Analyze" type="Success" name="rptTariffByJobType.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptTariffByJobType.resx" />
+  <event action="Analyze" type="Success" name="rptTariffSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rReports\rptTariffSummary.resx" />
+  <event action="Analyze" type="Success" name="FGCIJOROSystem.Reports" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\FGCIJOROSystem.Reports.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\FGCIJOROSystem.Presentation.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\App.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="ucActualAdvance.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vActualAdvance\ucActualAdvance.resx" />
+  <event action="Analyze" type="Success" name="ChecklistPrint.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\ChecklistPrint.resx" />
+  <event action="Analyze" type="Success" name="frmChecklistItem.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\frmChecklistItem.resx" />
+  <event action="Analyze" type="Success" name="frmChecklistPrintLogs.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\frmChecklistPrintLogs.resx" />
+  <event action="Analyze" type="Success" name="ucChecklist.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\ucChecklist.resx" />
+  <event action="Analyze" type="Success" name="ucChecklistGenerator.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\ucChecklistGenerator.resx" />
+  <event action="Analyze" type="Success" name="ucChecklistTransactionList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\ucChecklistTransactionList.resx" />
+  <event action="Analyze" type="Success" name="ucEquipmentList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\ucEquipmentList.resx" />
+  <event action="Analyze" type="Success" name="ucEquipmentTypeLists.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vChecklist\ucEquipmentTypeLists.resx" />
+  <event action="Analyze" type="Success" name="frmAuditTrail.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\AuditTrail\frmAuditTrail.resx" />
+  <event action="Analyze" type="Success" name="frmAuditTrailSelectOption.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\AuditTrail\frmAuditTrailSelectOption.resx" />
+  <event action="Analyze" type="Success" name="frmAttendanceGroup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vAttendance\frmAttendanceGroup.resx" />
+  <event action="Analyze" type="Success" name="frmAttendanceStatus.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vAttendance\frmAttendanceStatus.resx" />
+  <event action="Analyze" type="Success" name="ucAttendanceGroup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vAttendance\ucAttendanceGroup.resx" />
+  <event action="Analyze" type="Success" name="ucAttendanceStatus.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vAttendance\ucAttendanceStatus.resx" />
+  <event action="Analyze" type="Success" name="frmBranches.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vBranches\frmBranches.resx" />
+  <event action="Analyze" type="Success" name="ucBranches.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vBranches\ucBranches.resx" />
+  <event action="Analyze" type="Success" name="frmContractors.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vContractors\frmContractors.resx" />
+  <event action="Analyze" type="Success" name="ucContrator.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vContractors\ucContrator.resx" />
+  <event action="Analyze" type="Success" name="frmCustomerEntry.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vCustomers\frmCustomerEntry.resx" />
+  <event action="Analyze" type="Success" name="ucCustomers.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vCustomers\ucCustomers.resx" />
+  <event action="Analyze" type="Success" name="frmJobCategoryEntry.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vJobCategories\frmJobCategoryEntry.resx" />
+  <event action="Analyze" type="Success" name="ucJobCategories.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vJobCategories\ucJobCategories.resx" />
+  <event action="Analyze" type="Success" name="frmOtherEquipments.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vOtherEquipments\frmOtherEquipments.resx" />
+  <event action="Analyze" type="Success" name="ucOtherEquipments.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vOtherEquipments\ucOtherEquipments.resx" />
+  <event action="Analyze" type="Success" name="frmSection.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vSection\frmSection.resx" />
+  <event action="Analyze" type="Success" name="ucSection.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vSection\ucSection.resx" />
+  <event action="Analyze" type="Success" name="frmStatus.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vStatus\frmStatus.resx" />
+  <event action="Analyze" type="Success" name="ucStatus.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vStatus\ucStatus.resx" />
+  <event action="Analyze" type="Success" name="frmSelectSection.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vTariff\frmSelectSection.resx" />
+  <event action="Analyze" type="Success" name="frmTariff.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vTariff\frmTariff.resx" />
+  <event action="Analyze" type="Success" name="ucTariff.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vTariff\ucTariff.resx" />
+  <event action="Analyze" type="Success" name="frmUnit.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUnits\frmUnit.resx" />
+  <event action="Analyze" type="Success" name="ucUnits.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUnits\ucUnits.resx" />
+  <event action="Analyze" type="Success" name="ucUserAccess.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUserAccess\ucUserAccess.resx" />
+  <event action="Analyze" type="Success" name="ucUserLevel.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUserAccess\ucUserLevel.resx" />
+  <event action="Analyze" type="Success" name="frmJobTypeEntry.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUserAccess\vJobTypes\frmJobTypeEntry.resx" />
+  <event action="Analyze" type="Success" name="ucJobTypes.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUserAccess\vJobTypes\ucJobTypes.resx" />
+  <event action="Analyze" type="Success" name="frmUserEntry.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUsers\frmUserEntry.resx" />
+  <event action="Analyze" type="Success" name="ucUsers.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vConfiguration\vUsers\ucUsers.resx" />
+  <event action="Analyze" type="Success" name="ucDashboard.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vDashboard\ucDashboard.resx" />
+  <event action="Analyze" type="Success" name="ucNewDashboard.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vDashboard\ucNewDashboard.resx" />
+  <event action="Analyze" type="Success" name="frmJOActivityLog.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\frmJOActivityLog.resx" />
+  <event action="Analyze" type="Success" name="frmJOEquipReleasal.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\frmJOEquipReleasal.resx" />
+  <event action="Analyze" type="Success" name="frmJOStatusUpdate.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\frmJOStatusUpdate.resx" />
+  <event action="Analyze" type="Success" name="frmJOTransactionLog.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\frmJOTransactionLog.resx" />
+  <event action="Analyze" type="Success" name="frmStatusUpdate.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\frmStatusUpdate.resx" />
+  <event action="Analyze" type="Success" name="ucJOEntry.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\ucJOEntry.resx" />
+  <event action="Analyze" type="Success" name="ucJOEquipmentReleasalList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\ucJOEquipmentReleasalList.resx" />
+  <event action="Analyze" type="Success" name="ucJOList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\ucJOList.resx" />
+  <event action="Analyze" type="Success" name="frmJODetailWorkAssignment.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\vWorkAssignment\frmJODetailWorkAssignment.resx" />
+  <event action="Analyze" type="Success" name="frmMechanicWorkAssignment.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJobOrder\vWorkAssignment\frmMechanicWorkAssignment.resx" />
+  <event action="Analyze" type="Success" name="frmDirectPrinting.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vJORODirectPrint\frmDirectPrinting.resx" />
+  <event action="Analyze" type="Success" name="FrmLoader.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLoader\FrmLoader.resx" />
+  <event action="Analyze" type="Success" name="frmEmployeeLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmEmployeeLookup.resx" />
+  <event action="Analyze" type="Success" name="frmEmployeeNonEmployee.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmEmployeeNonEmployee.resx" />
+  <event action="Analyze" type="Success" name="frmEquipmentLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmEquipmentLookup.resx" />
+  <event action="Analyze" type="Success" name="frmExternalContratorLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmExternalContratorLookup.resx" />
+  <event action="Analyze" type="Success" name="frmExternalCustomerLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmExternalCustomerLookup.resx" />
+  <event action="Analyze" type="Success" name="frmGlobalLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmGlobalLookup.resx" />
+  <event action="Analyze" type="Success" name="frmPersonnelLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmPersonnelLookup.resx" />
+  <event action="Analyze" type="Success" name="frmTariffLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmTariffLookup.resx" />
+  <event action="Analyze" type="Success" name="frmWorkAssignmentLookup.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vLookups\frmWorkAssignmentLookup.resx" />
+  <event action="Analyze" type="Success" name="ucConfigMenu.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vMenus\ucConfigMenu.resx" />
+  <event action="Analyze" type="Success" name="ucJOMenu.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vMenus\ucJOMenu.resx" />
+  <event action="Analyze" type="Success" name="ucROMenu.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vMenus\ucROMenu.resx" />
+  <event action="Analyze" type="Success" name="ucMonitoring.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vMonitoring\ucMonitoring.resx" />
+  <event action="Analyze" type="Success" name="frmEquipmentList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmEquipmentList.resx" />
+  <event action="Analyze" type="Success" name="frmFilterEquipmentUR.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmFilterEquipmentUR.resx" />
+  <event action="Analyze" type="Success" name="frmJOROSectionSummary.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmJOROSectionSummary.resx" />
+  <event action="Analyze" type="Success" name="frmMonitoringSelectOption.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmMonitoringSelectOption.resx" />
+  <event action="Analyze" type="Success" name="frmPPEStatus.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmPPEStatus.resx" />
+  <event action="Analyze" type="Success" name="frmReportViewer.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmReportViewer.resx" />
+  <event action="Analyze" type="Success" name="frmSelectActualAdvanceAttendanceDate.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmSelectActualAdvanceAttendanceDate.resx" />
+  <event action="Analyze" type="Success" name="frmSelectJOROPRSList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmSelectJOROPRSList.resx" />
+  <event action="Analyze" type="Success" name="frmSelectSectionPersonnel.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmSelectSectionPersonnel.resx" />
+  <event action="Analyze" type="Success" name="frmSelectTariff.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vForms\frmSelectTariff.resx" />
+  <event action="Analyze" type="Success" name="ucReportList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vReport\vReports\ucReportList.resx" />
+  <event action="Analyze" type="Success" name="frmROEquipReleasal.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\frmROEquipReleasal.resx" />
+  <event action="Analyze" type="Success" name="frmROTransactionLogs.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\frmROTransactionLogs.resx" />
+  <event action="Analyze" type="Success" name="frmROUpdateStatus.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\frmROUpdateStatus.resx" />
+  <event action="Analyze" type="Success" name="ucROEntry.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\ucROEntry.resx" />
+  <event action="Analyze" type="Success" name="ucROEquipmentReleasalList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\ucROEquipmentReleasalList.resx" />
+  <event action="Analyze" type="Success" name="ucROList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\ucROList.resx" />
+  <event action="Analyze" type="Success" name="frmRODetailWorkAssignment.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\vROWorkAssignment\frmRODetailWorkAssignment.resx" />
+  <event action="Analyze" type="Success" name="frmROMechanicWorkAssignment.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vRescueOrder\vROWorkAssignment\frmROMechanicWorkAssignment.resx" />
+  <event action="Analyze" type="Success" name="frmAboutSystem.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vLogin\frmAboutSystem.resx" />
+  <event action="Analyze" type="Success" name="frmChangelogs.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vLogin\frmChangelogs.resx" />
+  <event action="Analyze" type="Success" name="frmLogin.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vLogin\frmLogin.resx" />
+  <event action="Analyze" type="Success" name="frmAdmin.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vMain\frmAdmin.resx" />
+  <event action="Analyze" type="Success" name="frmMainWindow.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vMain\frmMainWindow.resx" />
+  <event action="Analyze" type="Success" name="frmOnlineUsers.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vMain\frmOnlineUsers.resx" />
+  <event action="Analyze" type="Success" name="frmUsersLogList.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vMain\frmUsersLogList.resx" />
+  <event action="Analyze" type="Success" name="frmMsg.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\vSystem\vMsg\frmMsg.resx" />
+  <event action="Analyze" type="Success" name="FGCIJOROSystem.Presentation" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\FGCIJOROSystem.Presentation.csproj" />
+  <event action="Analyze" type="Success" name="FGCIJOROSystem" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.sln" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\FGCIJOROSystem.Common.csproj" />
+  <event action="Upgrade" type="Success" name="FGCIJOROSystem.Common" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Common\FGCIJOROSystem.Common.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\FGCIJOROSystem.Reports.csproj" />
+  <event action="Upgrade" type="Success" name="Config Sections" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Upgrade" type="Success" name="App.config" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\App.config" />
+  <event action="Upgrade" type="Success" name="rptAuditTrailRecordCountSum.resx" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\rAuditTrail\rptAuditTrailRecordCountSum.resx" />
+  <event action="Upgrade" type="Success" name="FGCIJOROSystem.Reports" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.Reports\FGCIJOROSystem.Reports.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\FGCIJOROSystem.Presentation.csproj" />
+  <event action="Upgrade" type="Success" name="FGCIJOROSystem.Presentation" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem\FGCIJOROSystem.Presentation.csproj" />
+  <event action="Upgrade" type="Success" name="FGCIJOROSystem" path="C:\Users\IT-Programmer\Active-Projects\FGCIJORO\fgcijorosystem\FGCIJOROSystem\FGCIJOROSystem.sln" />
+</log>

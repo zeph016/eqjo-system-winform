@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-PH">
+  <Title Text="" Alignment="Left" Url="D:\FGCIJOROSystem\Documents\Logo Files\Logo Files\FGCI Header Short.png" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="10.0.0.4_FGCIJOROSystemDB_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="10.0.0.4" />
+          <Parameter Name="database" Value="FGCIJOROSystemDB" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="sa" />
+          <Parameter Name="password" Value="1t_r3publ1cadm1n" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>SELECT * FROM (SELECT JO.[ItemType] As EquipmentType
+                                ,0 ReferenceType
+                                --,JO.BranchId
+                                ,EquipmentClass = (CASE WHEN JO.ItemType = 0 THEN EC.PPEClassName 
+						                                WHEN JO.ItemType = 1 THEN '' 
+						                                WHEN JO.ItemType = 2 THEN ''
+						                                ELSE  '' END)
+
+                                ,EquipmentCode = (CASE WHEN JO.ItemType = 0 THEN ET.PPETypeName 
+						                                WHEN JO.ItemType = 1 THEN SD.ToolName
+						                                WHEN JO.ItemType = 2 THEN OT.[Name]  
+						                                ELSE  '' END)
+                                ,EquipmentName = (CASE WHEN JO.ItemType = 0 THEN EQ.PPEName 
+						                                WHEN JO.ItemType = 1 THEN SD.ToolName
+						                                WHEN JO.ItemType = 2 THEN OT.[Name]  
+						                                ELSE  '' END)
+                                ,PlateNo = (CASE WHEN JO.ItemType = 0 THEN  EQ.PlateNo
+						                                WHEN JO.ItemType = 1 THEN '' 
+						                                WHEN JO.ItemType = 2 THEN ''
+						                                ELSE  '' END)
+                                ,Location = (CASE WHEN JO.ItemType = 0 THEN  EQ.ActualLocation
+						                                WHEN JO.ItemType = 1 THEN '' 
+						                                WHEN JO.ItemType = 2 THEN ''
+						                                ELSE  '' END)
+                                ,JOROStatus = 0
+								,ES.StatusDescription AS EquipmentStatus
+                                ,(SELECT STUFF((								SELECT ', ' +  
+                                'JO'  + Substring(JOs.RefYear, LEN(JOs.RefYear) - 1,4) + FORMAT(JOs.JONo,'0000') AS [text()]
+                                FROM  JOs 
+                                WHERE JOs.EquipmentId = JO.EquipmentId AND JOs.Status != 5 AND  JOs.Status != 4 AND JOs.Status != 7 FOR XML PATH('')),1,1,'')) AS JORONos
+                                FROM [dbo].[JOs] AS JO
+                                LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].[DescriptionAndStatus] AS EQ ON EQ.Id = JO.EquipmentId
+                                    LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].[PPETypes] AS ET ON EQ.PPETypeId = ET.Id
+	                                    LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].[PPEClasses] AS EC ON EQ.PPEClassId = EC.Id
+		                                    LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].RegistrationRenewals AS ER ON EQ.Id =  ER.DescriptionAndStatusId
+                                                LEFT JOIN FGCILInventoryDB.dbo.StockDetails SD  ON SD.Id = JO.EquipmentId
+                                                    LEFT JOIN OtherEquipments OT ON OT.Id = JO.EquipmentId
+								                        LEFT JOIN FGCIAccountingPPEMonitoringDB.dbo.EquipmentStatus ES ON ES.EquipmentStatusId = EQ.EquipmentStatusId
+                                    WHERE (JO.Status != 5 AND  JO.Status != 4 AND JO.Status != 7)
+                                GROUP BY JO.ItemType, JO.EquipmentId, ET.PPETypeName, EQ.PPEName, EQ.PlateNo, EQ.ActualLocation, EC.PPEClassName , SD.ToolName, OT.[Name],ES.StatusDescription --, JO.Status
+                        UNION ALL
+                                SELECT RO.[ItemType] As EquipmentType
+                                ,1 ReferenceType
+                                --,RO.[EquipmentId] As EquipmentMasterlistId
+                                ,EquipmentClass = (CASE WHEN RO.ItemType = 0 THEN EC.PPEClassName 
+						                                WHEN RO.ItemType = 1 THEN '' 
+						                                WHEN RO.ItemType = 2 THEN ''
+						                                ELSE  '' END)
+
+                                ,EquipmentCode = (CASE WHEN RO.ItemType = 0 THEN ET.PPETypeName 
+						                                WHEN RO.ItemType = 1 THEN SD.ToolName
+						                                WHEN RO.ItemType = 2 THEN OT.[Name]  
+						                                ELSE  '' END)
+                                ,EquipmentName = (CASE WHEN RO.ItemType = 0 THEN EQ.PPEName 
+						                                WHEN RO.ItemType = 1 THEN SD.ToolName
+						                                WHEN RO.ItemType = 2 THEN OT.[Name]  
+						                                ELSE  '' END)
+                                ,PlateNo = (CASE WHEN RO.ItemType = 0 THEN  EQ.PlateNo
+						                                WHEN RO.ItemType = 1 THEN '' 
+						                                WHEN RO.ItemType = 2 THEN ''
+						                                ELSE  '' END)
+                                ,Location = (CASE WHEN RO.ItemType = 0 THEN  EQ.ActualLocation
+						                                WHEN RO.ItemType = 1 THEN '' 
+						                                WHEN RO.ItemType = 2 THEN ''
+						                                ELSE  '' END)
+                                ,JOROStatus = 0
+								,ES.StatusDescription AS EquipmentStatus
+                                ,(SELECT STUFF((SELECT ', ' +  
+                                'RO'  + Substring(ROs.RefYear, LEN(ROs.RefYear) - 1,4) + FORMAT(ROs.RONo,'0000') AS [text()]
+                                FROM  ROs 
+                                WHERE ROs.EquipmentId = RO.EquipmentId AND ROs.Status != 5 AND  ROs.Status != 4 AND ROs.Status != 7 FOR XML PATH('')),1,1,'')) AS JORONos
+                                FROM [dbo].[ROs] AS RO
+                                LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].[DescriptionAndStatus] AS EQ ON EQ.Id = RO.EquipmentId
+                                    LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].[PPETypes] AS ET ON EQ.PPETypeId = ET.Id
+	                                    LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].[PPEClasses] AS EC ON EQ.PPEClassId = EC.Id
+		                                    LEFT JOIN [FGCIAccountingPPEMonitoringDB].[dbo].RegistrationRenewals AS ER ON EQ.Id =  ER.DescriptionAndStatusId
+                                                LEFT JOIN FGCILInventoryDB.dbo.StockDetails SD  ON SD.Id = RO.EquipmentId
+                                                    LEFT JOIN OtherEquipments OT ON OT.Id = RO.EquipmentId
+								                        LEFT JOIN FGCIAccountingPPEMonitoringDB.dbo.EquipmentStatus ES ON ES.EquipmentStatusId = EQ.EquipmentStatusId
+                                    WHERE (RO.Status != 5 AND  RO.Status != 4 AND RO.Status != 7)
+                                GROUP BY RO.ItemType, RO.EquipmentId, ET.PPETypeName, EQ.PPEName, EQ.PlateNo, EQ.ActualLocation, EC.PPEClassName , SD.ToolName, OT.[Name],ES.StatusDescription) T</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Query">
+            <Field Name="EquipmentType" Type="Byte" />
+            <Field Name="ReferenceType" Type="Int32" />
+            <Field Name="EquipmentClass" Type="String" />
+            <Field Name="EquipmentCode" Type="String" />
+            <Field Name="EquipmentName" Type="String" />
+            <Field Name="PlateNo" Type="String" />
+            <Field Name="Location" Type="String" />
+            <Field Name="JOROStatus" Type="Int32" />
+            <Field Name="EquipmentStatus" Type="String" />
+            <Field Name="JORONos" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource2">
+      <Name>SQL Data Source 2</Name>
+      <Connection Name="10.0.0.4_FGCIJOROSystemDB_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="10.0.0.4" />
+          <Parameter Name="database" Value="FGCIAccountingPPEMonitoringDB" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="sa" />
+          <Parameter Name="password" Value="1t_r3publ1cadm1n" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>SELECT DISTINCT DS.Id AS EquipmentMasterlistId
+	                                              ,DS.PPEName AS EquipmentCode
+                                                  ,ET.Id AS PPETypeId
+	                                              ,ET.PPETypeName AS EquipmentName
+                                                  ,DS.ActualLocation AS Location
+                                                  ,DS.EquipmentStatusId
+	                                              ,ES.StatusDescription AS EquipmentStatus
+                                                  ,EC.Id AS PPEClassId
+	                                              ,EC.PPEClassName AS EquipmentClass
+                                              FROM DescriptionAndStatus AS DS
+	                                            LEFT JOIN FGCIJOROSystemDB.dbo.JOs JO ON JO.EquipmentId = DS.Id
+		                                            LEFT JOIN EquipmentStatus ES ON ES.EquipmentStatusId = DS.EquipmentStatusId
+			                                            LEFT JOIN PPETypes ET ON ET.Id = DS.PPETypeId
+				                                            LEFT JOIN PPEClasses EC ON EC.Id = DS.PPEClassId
+															WHERE DS.Id &lt;&gt; 0</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 2">
+          <View Name="Query">
+            <Field Name="EquipmentMasterlistId" Type="Int64" />
+            <Field Name="EquipmentCode" Type="String" />
+            <Field Name="PPETypeId" Type="Int64" />
+            <Field Name="EquipmentName" Type="String" />
+            <Field Name="Location" Type="String" />
+            <Field Name="EquipmentStatusId" Type="Int64" />
+            <Field Name="EquipmentStatus" Type="String" />
+            <Field Name="PPEClassId" Type="Int64" />
+            <Field Name="EquipmentClass" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Pie ComponentName="pieDashboardItem1" Name="JO | RO EQUIPMENT STATUS" DataSource="dashboardSqlDataSource1" DataMember="Query" LabelContentType="ArgumentValueAndPercent">
+      <InteractivityOptions MasterFilterMode="Multiple" IsDrillDownEnabled="true" />
+      <DataItems>
+        <Dimension DataMember="EquipmentStatus" UniqueName="DataItem1" />
+        <Measure DataMember="EquipmentName" SummaryType="Count" UniqueName="DataItem0" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Values>
+        <Value UniqueName="DataItem0" />
+      </Values>
+    </Pie>
+    <Grid ComponentName="gridDashboardItem1" Name="Equipment Details" DataSource="dashboardSqlDataSource1" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="EquipmentClass" UniqueName="DataItem0" />
+        <Dimension DataMember="EquipmentStatus" UniqueName="DataItem3" />
+        <Dimension DataMember="Location" UniqueName="DataItem4" />
+        <Dimension DataMember="JORONos" UniqueName="DataItem5" />
+        <Dimension DataMember="EquipmentCode" UniqueName="DataItem1" />
+        <Dimension DataMember="EquipmentName" UniqueName="DataItem2" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Weight="75.164835164835168">
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="83.07692307692308">
+          <Dimension UniqueName="DataItem1" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="74.967032967032964">
+          <Dimension UniqueName="DataItem2" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="67.252747252747255">
+          <Dimension UniqueName="DataItem3" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="75.164835164835168">
+          <Dimension UniqueName="DataItem4" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="74.175824175824175">
+          <Dimension UniqueName="DataItem5" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions AllowGridCellMerge="true" ColumnWidthMode="Manual" />
+    </Grid>
+    <Pivot ComponentName="pivotDashboardItem1" Name="Equipment Status Count" DataSource="dashboardSqlDataSource1" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="EquipmentCode" UniqueName="DataItem1" />
+        <Dimension DataMember="EquipmentName" UniqueName="DataItem0" />
+        <Dimension DataMember="EquipmentStatus" UniqueName="DataItem2" />
+        <Measure DataMember="EquipmentStatus" SummaryType="Count" UniqueName="DataItem4" />
+      </DataItems>
+      <Columns>
+        <Column UniqueName="DataItem2" />
+      </Columns>
+      <Rows>
+        <Row UniqueName="DataItem1" />
+        <Row UniqueName="DataItem0" />
+      </Rows>
+      <Values>
+        <Value UniqueName="DataItem4" />
+      </Values>
+      <AutoExpandColumnGroups>true</AutoExpandColumnGroups>
+      <AutoExpandRowGroups>true</AutoExpandRowGroups>
+    </Pivot>
+  </Items>
+  <ColorScheme>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-16257971">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatusName" />
+          <Value Type="System.String" Value="Operational/In Use" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-909804">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatusName" />
+          <Value Type="System.String" Value="Under Repair" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-1">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatus" />
+          <Value Type="System.String" Value="D86D8A6C-0D87-4CA4-9C15-3356A83699B5" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-6983329">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatus" />
+          <Value Type="System.String" Value="Junked" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-16721659">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatus" />
+          <Value Type="System.String" Value="Operational/In Use" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-1575919">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatus" />
+          <Value Type="System.String" Value="Storage" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-124157">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatus" />
+          <Value Type="System.String" Value="Under Repair" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+  </ColorScheme>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="50">
+        <LayoutItem DashboardItem="pieDashboardItem1" Weight="50" />
+        <LayoutItem DashboardItem="pivotDashboardItem1" Weight="50" />
+      </LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" Weight="50" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

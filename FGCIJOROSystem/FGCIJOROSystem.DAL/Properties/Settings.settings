@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FGCIJOROSystem.DAL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ProductMasterlistConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.0.9;Initial Catalog=FGCIProductMasterlistDB;User ID=sa;Password=1t_r3publ1cadm1n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.0.0.9;Initial Catalog=FGCIProductMasterlistDB;User ID=sa;Password=1t_r3publ1cadm1n</Value>
+    </Setting>
+    <Setting Name="InventoryConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.0.9;Initial Catalog=FGCILInventoryDB;User ID=sa;Password=1t_r3publ1cadm1n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.0.0.9;Initial Catalog=FGCILInventoryDB;User ID=sa;Password=1t_r3publ1cadm1n</Value>
+    </Setting>
+    <Setting Name="MasterlistConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.0.9;Initial Catalog=FGCIHRDMasterlistSystemDB;User ID=sa;Password=1t_r3publ1cadm1n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.0.0.9;Initial Catalog=FGCIHRDMasterlistSystemDB;User ID=sa;Password=1t_r3publ1cadm1n</Value>
+    </Setting>
+    <Setting Name="PPEConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.0.9;Initial Catalog=FGCIAccountingPPEMonitoringDB;User ID=sa;Password=1t_r3publ1cadm1n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.0.0.9;Initial Catalog=FGCIAccountingPPEMonitoringDB;User ID=sa;Password=1t_r3publ1cadm1n</Value>
+    </Setting>
+    <Setting Name="ProjectEFileConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.0.9;Initial Catalog=FGCIProjectEFileCabinetDB;User ID=sa;Password=1t_r3publ1cadm1n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.0.0.9;Initial Catalog=FGCIProjectEFileCabinetDB;User ID=sa;Password=1t_r3publ1cadm1n</Value>
+    </Setting>
+    <Setting Name="JOROSystemDB" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.0.9;Initial Catalog=FGCIJOROSystemDB;Persist Security Info=True;User ID=sa;Password=1t_r3publ1cadm1n&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.0.0.9;Initial Catalog=FGCIJOROSystemDB;Persist Security Info=True;User ID=sa;Password=1t_r3publ1cadm1n</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

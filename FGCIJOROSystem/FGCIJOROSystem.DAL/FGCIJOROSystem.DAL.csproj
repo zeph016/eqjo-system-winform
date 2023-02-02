@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9646E0FF-9DFE-4ECE-93D5-5F8FA21AB242}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FGCIJOROSystem.DAL</RootNamespace>
+    <AssemblyName>FGCIJOROSystem.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLL\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ActualAdvanceRepo\ActivityReportRepository.cs" />
+    <Compile Include="Repositories\ActualAdvanceRepo\ActualAdvanceReferenceRepository.cs" />
+    <Compile Include="Repositories\ActualAdvanceRepo\ActualAdvanceRepository.cs" />
+    <Compile Include="Repositories\ActualAdvanceRepo\AttendanceRepository.cs" />
+    <Compile Include="Repositories\ActualAdvanceRepo\EmployeeActivityRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepo\ChecklistDetailsRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepo\ChecklistGeneratorDetailRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepo\ChecklistGeneratorRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepo\ChecklistItemRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepo\ChecklistPrintLogsRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepo\ChecklistRepository.cs" />
+    <Compile Include="Repositories\ChecklistRepo\ChecklistTransactionRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\AttendanceGroupRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\AttendanceStatusRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\BranchRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\ContractorRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\CustomerRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\JobCategoryRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\JobTypeRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\ModulesRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\OtherEquipmentRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\SectionJORORepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\StatusRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\UserAccessLevelRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\UsersLogRepository.cs" />
+    <Compile Include="Repositories\DashboardRepo\JORODashboardRepository.cs" />
+    <Compile Include="Repositories\DashboardRepo\UREquipmentRepository.cs" />
+    <Compile Include="Repositories\EquipHistoryRepo\EquipHistoryRepository.cs" />
+    <Compile Include="Repositories\EquipmentURRepo\EquipmentURRepository.cs" />
+    <Compile Include="Repositories\EquipReleasalRepo\EquipmentReleasalRepository.cs" />
+    <Compile Include="Repositories\EquipReleasalRepo\JOReleasalTransactionRepository.cs" />
+    <Compile Include="Repositories\EquipReleasalRepo\JOReleasedRepository.cs" />
+    <Compile Include="Repositories\EquipReleasalRepo\ROReleasalTransactionRepository.cs" />
+    <Compile Include="Repositories\EquipReleasalRepo\ROReleasedRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\EquipmentRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\EquipmentTypeRepositories.cs" />
+    <Compile Include="Repositories\GlobalRepo\IEContractorRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\IECustomerRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\JODetailMechanicRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\ProductUnitRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\TariffRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\UnitsJORORepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\UserRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\DepartmentRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\EmployeeRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\NonEmployeeRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\ProjectRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\RODetailMechanicRepository.cs" />
+    <Compile Include="Repositories\GlobalRepo\SectionRepository.cs" />
+    <Compile Include="Repositories\ConfigRepo\PersonnelRepository.cs" />
+    <Compile Include="Repositories\JORepo\JOAuditTrailRepository.cs" />
+    <Compile Include="Repositories\JORepo\JODetailRepository.cs" />
+    <Compile Include="Repositories\JORepo\JODetailTransactionLogRepository.cs" />
+    <Compile Include="Repositories\JORepo\JOMechanicRepository.cs" />
+    <Compile Include="Repositories\JORepo\JOMechTransactionLogRepository.cs" />
+    <Compile Include="Repositories\JORepo\JORepository.cs" />
+    <Compile Include="Repositories\JORepo\JOTransactionLogRepository.cs" />
+    <Compile Include="Repositories\PPEStatusLogRepo\PPEStatusLogRepository.cs" />
+    <Compile Include="Repositories\PRSRepo\JOROPRSRepository.cs" />
+    <Compile Include="Repositories\Reports\EquipmentHistoryRepository.cs" />
+    <Compile Include="Repositories\Reports\JOROReportRepository.cs" />
+    <Compile Include="Repositories\RORepo\RODetailTransactionLogRepository.cs" />
+    <Compile Include="Repositories\RORepo\ROMechTransactionLogRepository.cs" />
+    <Compile Include="Repositories\RORepo\ROAuditTrailRepository.cs" />
+    <Compile Include="Repositories\RORepo\RODetailRepository.cs" />
+    <Compile Include="Repositories\RORepo\ROMechanicRepository.cs" />
+    <Compile Include="Repositories\RORepo\RORepository.cs" />
+    <Compile Include="Repositories\RORepo\ROTransactionLogRepository.cs" />
+    <Compile Include="Repositories\MonitoringRepo\MonitoringRepository.cs" />
+    <Compile Include="Repositories\WorkAssignment\JOWorkAssignmentRepository.cs" />
+    <Compile Include="Repositories\WorkAssignment\ROWorkAssignmentRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FGCIJOROSystem.Common\FGCIJOROSystem.Common.csproj">
+      <Project>{a12fe615-fbbb-459f-9d23-d49f0238b35a}</Project>
+      <Name>FGCIJOROSystem.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FGCIJOROSystem.Domain\FGCIJOROSystem.Domain.csproj">
+      <Project>{0ac9015d-0d99-4676-8032-cfbdaf350202}</Project>
+      <Name>FGCIJOROSystem.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\Dapper.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets" Condition="Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

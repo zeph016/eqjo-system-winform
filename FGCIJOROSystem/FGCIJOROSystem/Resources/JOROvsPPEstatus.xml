@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-PH">
+  <Title Text="" Alignment="Left" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="10.0.0.4_FGCIJOROSystemDB_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="10.0.0.4" />
+          <Parameter Name="database" Value="FGCIJOROSystemDB" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="sa" />
+          <Parameter Name="password" Value="1t_r3publ1cadm1n" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>SELECT ET.Id AS PPEStatusId
+                                          ,EquipmentId
+										  ,DS.PPEName AS EquipmentCode
+										  ,PT.PPETypeName AS EquipmentName
+										  ,DS.ActualLocation AS Location
+                                          ,ET.EquipmentStatusId AS EquipmentStatusId
+										  ,ES.StatusDescription AS EquipmentStatusName
+                                          ,EmployeeId
+										  ,CONCAT(GI.LastName, + ', ' + GI.FirstName, + ' ' + GI.MiddleName) AS FullName
+                                          ,SystemName
+                                          ,DateUpdate
+                                          ,Convert(nvarchar(8), TimeUpdate) AS TimeUpdate
+                                      FROM PPEStatusLog AS ET
+											LEFT JOIN FGCIAccountingPPEMonitoringDB.dbo.DescriptionAndStatus DS ON DS.Id = ET.EquipmentId
+											LEFT JOIN FGCIAccountingPPEMonitoringDB.dbo.PPETypes PT ON PT.Id = DS.PPETypeId
+												LEFT JOIN FGCIAccountingPPEMonitoringDB.dbo.EquipmentStatus ES ON ES.EquipmentStatusId = ET.EquipmentStatusId
+													LEFT JOIN FGCIHRDMasterlistSystemDB.dbo.EmployeesInformations EI ON EI.Id = ET.EmployeeId
+													LEFT JOIN FGCIHRDMasterlistSystemDB.dbo.GeneralInformations GI ON GI.Id = EI.GeneralInformationsId 
+													where equipmentid != 0 AND EquipmentId IS NOT NULL AND PPETypeName IS NOT NULL</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Query">
+            <Field Name="PPEStatusId" Type="Int32" />
+            <Field Name="EquipmentId" Type="Int32" />
+            <Field Name="EquipmentCode" Type="String" />
+            <Field Name="EquipmentName" Type="String" />
+            <Field Name="Location" Type="String" />
+            <Field Name="EquipmentStatusId" Type="Int32" />
+            <Field Name="EquipmentStatusName" Type="String" />
+            <Field Name="EmployeeId" Type="Int32" />
+            <Field Name="FullName" Type="String" />
+            <Field Name="SystemName" Type="String" />
+            <Field Name="DateUpdate" Type="DateTime" />
+            <Field Name="TimeUpdate" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource2">
+      <Name>SQL Data Source 2</Name>
+      <Connection Name="10.0.0.4_FGCIJOROSystemDB_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="10.0.0.4" />
+          <Parameter Name="database" Value="FGCIAccountingPPEMonitoringDB" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="sa" />
+          <Parameter Name="password" Value="1t_r3publ1cadm1n" />
+        </Parameters>
+      </Connection>
+      <Query Type="CustomSqlQuery" Name="Query">
+        <Sql>SELECT DISTINCT DS.Id AS EquipmentMasterlistId
+	                                              ,DS.PPEName AS EquipmentCode
+                                                  ,ET.Id AS PPETypeId
+	                                              ,ET.PPETypeName AS EquipmentName
+                                                  ,DS.ActualLocation AS Location
+                                                  ,DS.EquipmentStatusId
+	                                              ,ES.StatusDescription AS EquipmentStatus
+                                                  ,EC.Id AS PPEClassId
+	                                              ,EC.PPEClassName AS EquipmentClass
+                                              FROM DescriptionAndStatus AS DS
+	                                            LEFT JOIN FGCIJOROSystemDB.dbo.JOs JO ON JO.EquipmentId = DS.Id
+		                                            LEFT JOIN EquipmentStatus ES ON ES.EquipmentStatusId = DS.EquipmentStatusId
+			                                            LEFT JOIN PPETypes ET ON ET.Id = DS.PPETypeId
+				                                            LEFT JOIN PPEClasses EC ON EC.Id = DS.PPEClassId
+															WHERE DS.Id &lt;&gt; 0</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 2">
+          <View Name="Query">
+            <Field Name="EquipmentMasterlistId" Type="Int64" />
+            <Field Name="EquipmentCode" Type="String" />
+            <Field Name="PPETypeId" Type="Int64" />
+            <Field Name="EquipmentName" Type="String" />
+            <Field Name="Location" Type="String" />
+            <Field Name="EquipmentStatusId" Type="Int64" />
+            <Field Name="EquipmentStatus" Type="String" />
+            <Field Name="PPEClassId" Type="Int64" />
+            <Field Name="EquipmentClass" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Pie ComponentName="pieDashboardItem1" Name="JO | RO EQUIPMENT STATUS" DataSource="dashboardSqlDataSource1" DataMember="Query" LabelContentType="ArgumentValueAndPercent">
+      <InteractivityOptions MasterFilterMode="Multiple" IsDrillDownEnabled="true" />
+      <DataItems>
+        <Dimension DataMember="EquipmentStatusName" UniqueName="DataItem1" />
+        <Measure DataMember="EquipmentCode" Name="Equipment (Count)" SummaryType="Count" UniqueName="DataItem0" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Values>
+        <Value UniqueName="DataItem0" />
+      </Values>
+    </Pie>
+    <Pivot ComponentName="pivotDashboardItem1" Name="Equipment Status" DataSource="dashboardSqlDataSource1" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="EquipmentName" UniqueName="DataItem2" />
+        <Dimension DataMember="EquipmentCode" UniqueName="DataItem0" />
+        <Dimension DataMember="EquipmentStatusName" UniqueName="DataItem3" />
+        <Measure DataMember="EquipmentStatusName" SummaryType="Count" UniqueName="DataItem1" />
+        <Dimension DataMember="DateUpdate" SortOrder="Descending" DateTimeGroupInterval="DayMonthYear" UniqueName="DataItem4" />
+      </DataItems>
+      <Columns>
+        <Column UniqueName="DataItem3" />
+      </Columns>
+      <Rows>
+        <Row UniqueName="DataItem2" />
+        <Row UniqueName="DataItem0" />
+        <Row UniqueName="DataItem4" />
+      </Rows>
+      <Values>
+        <Value UniqueName="DataItem1" />
+      </Values>
+    </Pivot>
+    <Pie ComponentName="pieDashboardItem2" Name="PPE MONITORING STATUS" DataSource="dashboardSqlDataSource2" DataMember="Query" LabelContentType="ArgumentValueAndPercent">
+      <InteractivityOptions MasterFilterMode="Multiple" IsDrillDownEnabled="true" />
+      <DataItems>
+        <Measure DataMember="EquipmentCode" Name="Equipment (Count)" SummaryType="Count" UniqueName="DataItem0" />
+        <Dimension DataMember="EquipmentStatus" UniqueName="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Values>
+        <Value UniqueName="DataItem0" />
+      </Values>
+    </Pie>
+    <Pivot ComponentName="pivotDashboardItem2" Name="Pivot 1" DataSource="dashboardSqlDataSource2" DataMember="Query">
+      <DataItems>
+        <Dimension DataMember="EquipmentName" UniqueName="DataItem0" />
+        <Dimension DataMember="EquipmentCode" UniqueName="DataItem1" />
+        <Dimension DataMember="EquipmentStatus" UniqueName="DataItem2" />
+        <Measure DataMember="EquipmentStatus" SummaryType="Count" UniqueName="DataItem3" />
+      </DataItems>
+      <Columns>
+        <Column UniqueName="DataItem2" />
+      </Columns>
+      <Rows>
+        <Row UniqueName="DataItem0" />
+        <Row UniqueName="DataItem1" />
+      </Rows>
+      <Values>
+        <Value UniqueName="DataItem3" />
+      </Values>
+    </Pivot>
+  </Items>
+  <ColorScheme>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-16257971">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatusName" />
+          <Value Type="System.String" Value="Operational/In Use" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="Query" Color="-909804">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="EquipmentStatusName" />
+          <Value Type="System.String" Value="Under Repair" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+  </ColorScheme>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="50">
+        <LayoutItem DashboardItem="pieDashboardItem1" Weight="51.336898395721924" />
+        <LayoutItem DashboardItem="pieDashboardItem2" Weight="48.663101604278076" />
+      </LayoutGroup>
+      <LayoutGroup Weight="50">
+        <LayoutItem DashboardItem="pivotDashboardItem1" Weight="51.336898395721924" />
+        <LayoutItem DashboardItem="pivotDashboardItem2" Weight="48.663101604278076" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

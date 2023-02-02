@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4F19F9A-7C38-487F-BE7A-DB37166EE3FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FGCIJOROSystem.Reports</RootNamespace>
+    <AssemblyName>FGCIJOROSystem.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Mvvm.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2022.3.913.48, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2022.3.913.48\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2022.3.913.48, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2022.3.913.48\Telerik.WinControls.RichTextEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2022.3.913.48, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2022.3.913.48\Telerik.WinControls.SpellChecker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2022.3.913.48, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2022.3.913.48\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2022.3.906.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2022.3.913.48\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2022.3.906.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2022.3.913.48\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2022.3.913.48, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2022.3.913.48\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Telerik.Reporting, Version=16.2.22.914, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rActualAdvance\rptActualAdvance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rActualAdvance\rptActualAdvance.Designer.cs">
+      <DependentUpon>rptActualAdvance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rActualAdvance\rptActualAdvanceDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rActualAdvance\rptActualAdvanceDetail.Designer.cs">
+      <DependentUpon>rptActualAdvanceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rptAccomplishmentReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rptAccomplishmentReport.Designer.cs">
+      <DependentUpon>rptAccomplishmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rptAttendance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rptAttendance.Designer.cs">
+      <DependentUpon>rptAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rptCutOffAttendanceCalc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rptCutOffAttendanceCalc.Designer.cs">
+      <DependentUpon>rptCutOffAttendanceCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rptCutOffAttendanceStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rptCutOffAttendanceStatus.Designer.cs">
+      <DependentUpon>rptCutOffAttendanceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rptCutOffAttendance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rptCutOffAttendance.Designer.cs">
+      <DependentUpon>rptCutOffAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rptDailyAttendance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rptDailyAttendance.Designer.cs">
+      <DependentUpon>rptDailyAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAttendance\rptDriversAttendance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAttendance\rptDriversAttendance.Designer.cs">
+      <DependentUpon>rptDriversAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAuditTrail\rptAuditTrail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAuditTrail\rptAuditTrail.Designer.cs">
+      <DependentUpon>rptAuditTrail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAuditTrail\rptAuditTrailRecordCountSum.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAuditTrail\rptAuditTrailRecordCountSum.Designer.cs">
+      <DependentUpon>rptAuditTrailRecordCountSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rAuditTrail\rptAuditTrailSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rAuditTrail\rptAuditTrailSummary.Designer.cs">
+      <DependentUpon>rptAuditTrailSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rChecklist\rptChecklist.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rChecklist\rptChecklist.Designer.cs">
+      <DependentUpon>rptChecklist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEquipmentHistory\rptEquipmentHistory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rEquipmentHistory\rptEquipmentHistory.Designer.cs">
+      <DependentUpon>rptEquipmentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEquipmentReleasal\rptEquipmentReleasal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rEquipmentReleasal\rptEquipmentReleasal.Designer.cs">
+      <DependentUpon>rptEquipmentReleasal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEquipmentReleasal\rptReleasalSummaryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rEquipmentReleasal\rptReleasalSummaryReport.Designer.cs">
+      <DependentUpon>rptReleasalSummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptEquipmentURSite.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptEquipmentURSite.Designer.cs">
+      <DependentUpon>rptEquipmentURSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptEquipmentUR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptEquipmentUR.Designer.cs">
+      <DependentUpon>rptEquipmentUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptEquipmentURSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptEquipmentURSummary.Designer.cs">
+      <DependentUpon>rptEquipmentURSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptSummaryOfEquipment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rEquipmentUR\rptSummaryOfEquipment.Designer.cs">
+      <DependentUpon>rptSummaryOfEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rJobOrder\rptJobOrder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rJobOrder\rptJobOrder.Designer.cs">
+      <DependentUpon>rptJobOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rJobOrder\rptRescueOrder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rJobOrder\rptRescueOrder.Designer.cs">
+      <DependentUpon>rptRescueOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rPPEStatusLog\rptPPEStatusLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rPPEStatusLog\rptPPEStatusLog.Designer.cs">
+      <DependentUpon>rptPPEStatusLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rPRS\rptJOROPRS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rPRS\rptJOROPRS.Designer.cs">
+      <DependentUpon>rptJOROPRS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rPRS\rptJOROList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rPRS\rptJOROList.Designer.cs">
+      <DependentUpon>rptJOROList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rPRS\rptJOROPRSList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rPRS\rptJOROPRSList.Designer.cs">
+      <DependentUpon>rptJOROPRSList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptEquipmentSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptEquipmentSummary.Designer.cs">
+      <DependentUpon>rptEquipmentSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptEquipmentSummaryOnly.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptEquipmentSummaryOnly.Designer.cs">
+      <DependentUpon>rptEquipmentSummaryOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptMechanicSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptMechanicSummary.Designer.cs">
+      <DependentUpon>rptMechanicSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptMonitoringSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptMonitoringSummary.Designer.cs">
+      <DependentUpon>rptMonitoringSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptMonitoringSummaryPerJORO.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptMonitoringSummaryPerJORO.Designer.cs">
+      <DependentUpon>rptMonitoringSummaryPerJORO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptPersonnelSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptPersonnelSummary.Designer.cs">
+      <DependentUpon>rptPersonnelSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptSectionSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptSectionSummary.Designer.cs">
+      <DependentUpon>rptSectionSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptTariffByEquipmentJO.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptTariffByEquipmentJO.Designer.cs">
+      <DependentUpon>rptTariffByEquipmentJO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptTariffByEquipmentRO.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptTariffByEquipmentRO.Designer.cs">
+      <DependentUpon>rptTariffByEquipmentRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptTariffByJobCategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptTariffByJobCategory.Designer.cs">
+      <DependentUpon>rptTariffByJobCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptTariffByJobType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptTariffByJobType.Designer.cs">
+      <DependentUpon>rptTariffByJobType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rReports\rptTariffSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rReports\rptTariffSummary.Designer.cs">
+      <DependentUpon>rptTariffSummary.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FGCIJOROSystem.DAL\FGCIJOROSystem.DAL.csproj">
+      <Project>{9646e0ff-9dfe-4ece-93d5-5f8fa21ab242}</Project>
+      <Name>FGCIJOROSystem.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FGCIJOROSystem.Domain\FGCIJOROSystem.Domain.csproj">
+      <Project>{0ac9015d-0d99-4676-8032-cfbdaf350202}</Project>
+      <Name>FGCIJOROSystem.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rActualAdvance\rptActualAdvance.resx">
+      <DependentUpon>rptActualAdvance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rptAccomplishmentReport.resx">
+      <DependentUpon>rptAccomplishmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rptAttendance.resx">
+      <DependentUpon>rptAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rptCutOffAttendanceCalc.resx">
+      <DependentUpon>rptCutOffAttendanceCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rptCutOffAttendanceStatus.resx">
+      <DependentUpon>rptCutOffAttendanceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rptCutOffAttendance.resx">
+      <DependentUpon>rptCutOffAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rptDailyAttendance.resx">
+      <DependentUpon>rptDailyAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAttendance\rptDriversAttendance.resx">
+      <DependentUpon>rptDriversAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAuditTrail\rptAuditTrail.resx">
+      <DependentUpon>rptAuditTrail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAuditTrail\rptAuditTrailRecordCountSum.resx">
+      <DependentUpon>rptAuditTrailRecordCountSum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rAuditTrail\rptAuditTrailSummary.resx">
+      <DependentUpon>rptAuditTrailSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rChecklist\rptChecklist.resx">
+      <DependentUpon>rptChecklist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEquipmentHistory\rptEquipmentHistory.resx">
+      <DependentUpon>rptEquipmentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEquipmentReleasal\rptEquipmentReleasal.resx">
+      <DependentUpon>rptEquipmentReleasal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEquipmentReleasal\rptReleasalSummaryReport.resx">
+      <DependentUpon>rptReleasalSummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEquipmentUR\rptEquipmentURSite.resx">
+      <DependentUpon>rptEquipmentURSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEquipmentUR\rptEquipmentUR.resx">
+      <DependentUpon>rptEquipmentUR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEquipmentUR\rptEquipmentURSummary.resx">
+      <DependentUpon>rptEquipmentURSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEquipmentUR\rptSummaryOfEquipment.resx">
+      <DependentUpon>rptSummaryOfEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rJobOrder\rptJobOrder.resx">
+      <DependentUpon>rptJobOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rJobOrder\rptRescueOrder.resx">
+      <DependentUpon>rptRescueOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rPPEStatusLog\rptPPEStatusLog.resx">
+      <DependentUpon>rptPPEStatusLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rPRS\rptJOROPRS.resx">
+      <DependentUpon>rptJOROPRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rPRS\rptJOROList.resx">
+      <DependentUpon>rptJOROList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rPRS\rptJOROPRSList.resx">
+      <DependentUpon>rptJOROPRSList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptEquipmentSummary.resx">
+      <DependentUpon>rptEquipmentSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptEquipmentSummaryOnly.resx">
+      <DependentUpon>rptEquipmentSummaryOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptMechanicSummary.resx">
+      <DependentUpon>rptMechanicSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptMonitoringSummary.resx">
+      <DependentUpon>rptMonitoringSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptMonitoringSummaryPerJORO.resx">
+      <DependentUpon>rptMonitoringSummaryPerJORO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptPersonnelSummary.resx">
+      <DependentUpon>rptPersonnelSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptSectionSummary.resx">
+      <DependentUpon>rptSectionSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptTariffByEquipmentJO.resx">
+      <DependentUpon>rptTariffByEquipmentJO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptTariffByEquipmentRO.resx">
+      <DependentUpon>rptTariffByEquipmentRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptTariffByJobCategory.resx">
+      <DependentUpon>rptTariffByJobCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptTariffByJobType.resx">
+      <DependentUpon>rptTariffByJobType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rReports\rptTariffSummary.resx">
+      <DependentUpon>rptTariffSummary.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\FG LOGO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FG LOGO copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HEADER.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets" Condition="Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

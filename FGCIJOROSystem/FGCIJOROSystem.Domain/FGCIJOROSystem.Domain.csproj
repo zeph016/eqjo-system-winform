@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AC9015D-0D99-4676-8032-CFBDAF350202}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FGCIJOROSystem.Domain</RootNamespace>
+    <AssemblyName>FGCIJOROSystem.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualAdvance\clsActivityReport.cs" />
+    <Compile Include="ActualAdvance\clsActualAdvance.cs" />
+    <Compile Include="ActualAdvance\clsActualAdvanceReference.cs" />
+    <Compile Include="ActualAdvance\clsActualAdvanceDetails.cs" />
+    <Compile Include="ActualAdvance\clsAttendance.cs" />
+    <Compile Include="Checklist\clsChecklistGenerator.cs" />
+    <Compile Include="Checklist\clsChecklistGeneratorDetails.cs" />
+    <Compile Include="Checklist\clsChecklistPrintLogs.cs" />
+    <Compile Include="Checklist\clsChecklistTransaction.cs" />
+    <Compile Include="Configurations\Attendance\clsAttendanceGroup.cs" />
+    <Compile Include="Configurations\Attendance\clsAttendanceStatus.cs" />
+    <Compile Include="Configurations\Branches\clsBranch.cs" />
+    <Compile Include="Configurations\Customers\clsCustomer.cs" />
+    <Compile Include="Checklist\clsChecklist.cs" />
+    <Compile Include="Checklist\clsChecklistDetails.cs" />
+    <Compile Include="Checklist\clsChecklistItem.cs" />
+    <Compile Include="Configurations\Users\clsUsersLog.cs" />
+    <Compile Include="Dashboard\clsJORODashboard.cs" />
+    <Compile Include="EquipmentHistory\clsEquipmentHistory.cs" />
+    <Compile Include="EquipmentReleasal\clsJOReleasalTransaction.cs" />
+    <Compile Include="EquipmentReleasal\clsJOReleased.cs" />
+    <Compile Include="EquipmentReleasal\clsROReleasalTransaction.cs" />
+    <Compile Include="EquipmentReleasal\clsROReleased.cs" />
+    <Compile Include="EquipmentUR\clsEquipmentClasses.cs" />
+    <Compile Include="EquipmentUR\clsEquipmentType.cs" />
+    <Compile Include="EquipmentUR\clsEquipmentUR.cs" />
+    <Compile Include="Global\clsEquipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global\clsEquipmentType.cs" />
+    <Compile Include="Configurations\JobCategories\clsJobCategory.cs" />
+    <Compile Include="Configurations\Contractors\clsContractor.cs" />
+    <Compile Include="Configurations\JobTypes\clsJobType.cs" />
+    <Compile Include="Configurations\Modules\clsModLevelAssignment.cs" />
+    <Compile Include="Configurations\Modules\clsModule.cs" />
+    <Compile Include="Configurations\OtherEquipment\clsOtherEquipment.cs" />
+    <Compile Include="Configurations\Personnels\clsPersonnels.cs" />
+    <Compile Include="Configurations\SectionJORO\clsSectionJORO.cs" />
+    <Compile Include="Configurations\Status\clsStatus.cs" />
+    <Compile Include="Configurations\Tariff\clsTariff.cs" />
+    <Compile Include="Configurations\UnitsJORO\clsUnitJORO.cs" />
+    <Compile Include="Configurations\Users\clsUserLevel.cs" />
+    <Compile Include="Enums\clsEnums.cs" />
+    <Compile Include="Global\clsDepartment.cs" />
+    <Compile Include="Global\clsEmployee.cs" />
+    <Compile Include="Global\clsNonEmployee.cs" />
+    <Compile Include="Global\clsProductUnit.cs" />
+    <Compile Include="Global\clsProject.cs" />
+    <Compile Include="Global\clsSection.cs" />
+    <Compile Include="IPrototype.cs" />
+    <Compile Include="JobOrder\clsJOAuditTrail.cs" />
+    <Compile Include="JobOrder\clsJobOrder.cs" />
+    <Compile Include="JobOrder\clsJODetails.cs" />
+    <Compile Include="JobOrder\clsJODetailTransactionLogs.cs" />
+    <Compile Include="JobOrder\clsJOMechTransactionLogs.cs" />
+    <Compile Include="JobOrder\clsJOTransactionLogs.cs" />
+    <Compile Include="JobOrder\clsMechanics.cs" />
+    <Compile Include="Monitoring\clsMonitoring.cs" />
+    <Compile Include="PPEStatusLog\clsPPEStatusLog.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PRS\clsJOROPRS.cs" />
+    <Compile Include="Reports\clsEquipmentHistoryReport.cs" />
+    <Compile Include="Reports\clsJOROReports.cs" />
+    <Compile Include="RescueOrder\clsRODetailTransactionLogs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Configurations\Users\clsUser.cs" />
+    <Compile Include="RescueOrder\clsRescueOrder.cs" />
+    <Compile Include="RescueOrder\clsROAuditTrail.cs" />
+    <Compile Include="RescueOrder\clsRODetails.cs" />
+    <Compile Include="RescueOrder\clsROMechanics.cs" />
+    <Compile Include="RescueOrder\clsROMechTransactionLogs.cs" />
+    <Compile Include="RescueOrder\clsROTransactionLogs.cs" />
+    <Compile Include="WorkAssignment\clsWorkAssignments.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FGCIJOROSystem.Common\FGCIJOROSystem.Common.csproj">
+      <Project>{a12fe615-fbbb-459f-9d23-d49f0238b35a}</Project>
+      <Name>FGCIJOROSystem.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets" Condition="Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmptyLicensesLicx.2.0.1\build\EmptyLicensesLicx.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
